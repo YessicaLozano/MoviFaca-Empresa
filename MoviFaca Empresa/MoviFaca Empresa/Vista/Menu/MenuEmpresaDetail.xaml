@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoviFaca_Empresa.Vista.Menu.MenuEmpresaDetail"
+             BackgroundColor="White"
+             Title="Menu">
+    <ContentPage.Content>
+        <!--Utilizamos Grid para definir el diseño, se definen 5 filas y solo una columna -->
+        <ScrollView>
+            <Grid RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="1" Margin="0,90,0,0">
+                    <Image
+                    Source="logo1"
+                    HeightRequest="150"
+                    WidthRequest="0"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
+                    <Label Text="¿Necesita Ayuda?"
+                            TextColor="#306970"
+                            FontSize="16"
+                            WidthRequest="300"
+                            Margin="0,10,0,5"
+                            XAlign="Center"
+                           FontAttributes="Bold"
+                    />
+                </StackLayout>
+                <StackLayout Grid.Row="3" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
+                    <Label Text="Si no sabe como utilizar la aplicaciòn o tuvo un fallo, por favor comuniquese con nosotros al siquiente correo o telefono. "
+                            TextColor="#306970"
+                            FontSize="16"
+                            WidthRequest="300"
+                            Margin="0,10,0,5"
+                            XAlign="Center"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                    Text="Correo"
+                    FontSize="13"
+                    TextColor="#666666"
+                    />
+                    <Frame
+                    HasShadow="true"
+                    Padding="6"
+                    CornerRadius="7"
+                    BackgroundColor="#306970">
+                        <Label
+                    Text="movifaca@gmail.com"
+                    FontSize="16"
+                    TextColor="#ffffff"
+                     XAlign="Center"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                    Text="Telefono"
+                    FontSize="13"
+                    TextColor="#666666"
+                    />
+                    <Frame
+                    HasShadow="true"
+                    Padding="6"
+                    CornerRadius="7"
+                    BackgroundColor="#306970">
+                        <Label
+                    Text="3212161903"
+                    FontSize="16"
+                    TextColor="#ffffff"
+                     XAlign="Center"
+                    />
+                    </Frame>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

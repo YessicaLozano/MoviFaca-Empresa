@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoviFaca_Empresa.Vista.Empresa.DatosEmpresa"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <!--Utilizamos Grid para definir el diseño, se definen 7 filas y solo una columna -->
+        <ScrollView>
+            <Grid RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="1" Margin="0,20,0,0">
+                    <Image
+                    Source="logo1"
+                    HeightRequest="150"
+                    WidthRequest="0"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                    Text="Correo"
+                    FontSize="13"
+                    TextColor="#666666"
+                    />
+                    <Frame
+                    HasShadow="true"
+                    Padding="6"
+                    CornerRadius="7">
+                        <Label
+                    x:Name="CorreoTxt"
+                    FontSize="16"
+                    TextColor="#306970"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                    Text="Contraseña"
+                    FontSize="13"
+                    TextColor="#666666"
+                    />
+                    <Frame
+                     HasShadow="true"
+                     Padding="6"
+                    CornerRadius="7" >
+                        <Label
+                    x:Name="ContraseñaTxt"
+                    FontSize="16"
+                    TextColor="#306970"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                     Text="Razòn social de la empresa"
+                     FontSize="13"
+                     TextColor="#666666"/>
+                    <Frame
+                     HasShadow="true"
+                     Padding="6"
+                     CornerRadius="7">
+                        <Label
+                    x:Name="NombreTxt"
+                    FontSize="16"
+                    TextColor="#306970"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical">
+                    <Label
+                        Text="NIT"
+                        FontSize="13"
+                        TextColor="#666666"/>
+                    <Frame
+                        HasShadow="true"
+                        Padding="6"
+                        CornerRadius="7">
+                        <Label
+                        x:Name="NitTxt"
+                        FontSize="16"
+                        TextColor="#306970"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" Spacing="20">
+                    <Label
+                        Text="Direcciòn "
+                        FontSize="13"
+                        TextColor="#666666"/>
+                    <Frame
+                        HasShadow="true"
+                        Padding="6"
+                        CornerRadius="7">
+                        <Label
+                        FontSize="16"
+                        TextColor="#306970"
+                        x:Name="DireccionTxt"
+                        />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="7" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" Spacing="20">
+                    <Label
+                        Text="Teléfono o Celular"
+                        FontSize="13"
+                        TextColor="#666666"/>
+                    <Frame
+                        HasShadow="true"
+                        Padding="6"
+                        CornerRadius="7">
+                        <Label
+                         FontSize="16"
+                        TextColor="#306970"
+                        x:Name="TelefonoTxt"
+                    />
+                    </Frame>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

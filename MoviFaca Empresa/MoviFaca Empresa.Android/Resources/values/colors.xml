@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="launcher_background">#FFFFFF</color>
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
+	<color name="fondo">#FFFFFF</color>
+	<color name="uno">#306970</color>
+	<color name="dos">#6AB49D</color>
+	<color name="tres">#275154</color>
+	<color name="cuatro">#CCDFC9</color>
+	<color name="cinco">#DEECDB</color>
+	<color name="negro">#000000</color>
+</resources>

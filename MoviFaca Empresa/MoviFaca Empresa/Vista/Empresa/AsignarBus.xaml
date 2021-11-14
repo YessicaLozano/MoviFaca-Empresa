@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoviFaca_Empresa.Vista.Empresa.AsignarBus"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <!--Utilizamos Grid para definir el diseño, se definen 10 filas y solo una columna -->
+        <ScrollView>
+            <Grid RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="1" Margin="0,20,0,0">
+                    <Image
+                    Source="logo1"
+                    HeightRequest="150"
+                    WidthRequest="0"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
+                    <Label
+                    Text="Seleccione algùn bus sin asignar"
+                    TextColor="#306970"
+                    FontSize="16"
+                    WidthRequest="300"
+                    XAlign="Center"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Button
+                     x:Name="Placa1Txt"
+                     TextColor="#275154"
+                     Font="Montserrat-Medium.otf"
+                     FontSize="15"
+                     BackgroundColor="#ffffff"
+                     BorderColor="#6AB49D"
+                     BorderWidth="1.5"
+                     WidthRequest="300"
+                     HeightRequest="50"
+                     CornerRadius="7"
+                     Clicked="Placa1_Clicked"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Button
+                     x:Name="Placa2Txt"
+                     TextColor="#275154"
+                     Font="Montserrat-Medium.otf"
+                     FontSize="15"
+                     BackgroundColor="#ffffff"
+                     BorderColor="#6AB49D"
+                     BorderWidth="1.5"
+                     WidthRequest="300"
+                     HeightRequest="50"
+                     CornerRadius="7"
+                     Clicked="Placa2_Clicked"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Button
+                     x:Name="Placa3Txt"
+                     TextColor="#275154"
+                     Font="Montserrat-Medium.otf"
+                     FontSize="15"
+                     BackgroundColor="#ffffff"
+                     BorderColor="#6AB49D"
+                     BorderWidth="1.5"
+                     WidthRequest="300"
+                     HeightRequest="50"
+                     CornerRadius="7"
+                     Clicked="Placa3_Clicked"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="6" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0">
+                    <Label
+                    Text="Seleccione el conductor al que quiera asignarlo"
+                    TextColor="#306970"
+                    FontSize="16"
+                    WidthRequest="300"
+                    XAlign="Center"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="7" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Button
+                     x:Name="Cedula1Txt"
+                     TextColor="#275154"
+                     Font="Montserrat-Medium.otf"
+                     FontSize="15"
+                     BackgroundColor="#ffffff"
+                     BorderColor="#6AB49D"
+                     BorderWidth="1.5"
+                     WidthRequest="300"
+                     HeightRequest="50"
+                     CornerRadius="7"
+                     Clicked="Cedula1_Clicked"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="8" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Button
+                     x:Name="Cedula2Txt"
+                     TextColor="#275154"
+                     Font="Montserrat-Medium.otf"
+                     FontSize="15"
+                     BackgroundColor="#ffffff"
+                     BorderColor="#6AB49D"
+                     BorderWidth="1.5"
+                     WidthRequest="300"
+                     HeightRequest="50"
+                     CornerRadius="7"
+                     Clicked="Cedula2_Clicked"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="9" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Button
+                     x:Name="Cedula3Txt"
+                     TextColor="#275154"
+                     Font="Montserrat-Medium.otf"
+                     FontSize="15"
+                     BackgroundColor="#ffffff"
+                     BorderColor="#6AB49D"
+                     BorderWidth="1.5"
+                     WidthRequest="300"
+                     HeightRequest="50"
+                     CornerRadius="7"
+                     Clicked="Cedula3_Clicked"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="10" HorizontalOptions="Center" Orientation="Vertical" Margin="0,30,0,50">
+                    <Button
+                     Text="Asignar Autobus"
+                     TextColor="White"
+                     Font="Montserrat-Medium.otf"
+                     FontSize="15"
+                     BackgroundColor="#6AB49D"
+                     BorderColor="#6AB49D"
+                     BorderWidth="1.5"
+                     WidthRequest="300"
+                     HeightRequest="50"
+                     CornerRadius="7"
+                     Clicked="AsignarBuss_Clicked"
+                    />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

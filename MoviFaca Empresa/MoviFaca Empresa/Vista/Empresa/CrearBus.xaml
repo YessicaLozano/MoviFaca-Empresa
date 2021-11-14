@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoviFaca_Empresa.Vista.Empresa.CrearBus"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <!--Utilizamos Grid para definir el diseño, se definen 7 filas y solo una columna -->
+        <ScrollView>
+            <Grid RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="1" Margin="0,20,0,0">
+                    <Image
+                    Source="logo1"
+                    HeightRequest="150"
+                    WidthRequest="0"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
+                    <Label
+                    Text="Complete los datos del bus"
+                    TextColor="#306970"
+                    FontSize="16"
+                    WidthRequest="300"
+                    XAlign="Center"
+                    />
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                    Text="Placa"
+                    FontSize="13"
+                    TextColor="#666666"
+                    />
+                    <Frame
+                    HasShadow="true"
+                    Padding="6"
+                    CornerRadius="7">
+                        <Entry
+                    x:Name="PlacaTxt"
+                    Placeholder="ITZ883"
+                    MaxLength="30"
+                    FontSize="15"
+                    Keyboard = "Keyboard.Chat"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                    Text="Fecha de vencimiento del SOAT (dd/mm/aa)"
+                    FontSize="13"
+                    TextColor="#666666"
+                    />
+                    <Frame
+                     HasShadow="true"
+                     Padding="6"
+                    CornerRadius="7" >
+                        <Entry
+                    x:Name="SoatTxt"
+                     Placeholder="02/12/21"
+                    MaxLength="30"
+                    FontSize="15"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                     Text="Tarjeta de propiedad - Licencia de transito No."
+                     FontSize="13"
+                     TextColor="#666666"/>
+                    <Frame
+                     HasShadow="true"
+                     Padding="6"
+                     CornerRadius="7">
+                        <Entry
+                    x:Name="TarjetaProTxt"
+                    Placeholder="12345678901"
+                    MaxLength="11"
+                    Keyboard="Numeric"
+                    FontSize="15"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical">
+                    <Label
+                        Text="Fecha de vencimiento de la tecnomecanica (dd/mm/aa)"
+                        FontSize="13"
+                        TextColor="#666666"/>
+                    <Frame
+                        HasShadow="true"
+                        Padding="6"
+                        CornerRadius="7">
+                        <Entry
+                      Placeholder="02/12/21"
+                      MaxLength="30"
+                      FontSize="15"
+                      x:Name="TecnoTxt"
+                    />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="7" HorizontalOptions="Center" Orientation="Vertical" Margin="0,30,0,50">
+                    <Button
+                     Text="Registrar Autobus"
+                     TextColor="White"
+                     Font="Montserrat-Medium.otf"
+                     FontSize="15"
+                     BackgroundColor="#6AB49D"
+                     BorderColor="#6AB49D"
+                     BorderWidth="1.5"
+                     WidthRequest="300"
+                     HeightRequest="50"
+                     CornerRadius="7"
+                     Clicked="RegistroBus_Clicked"
+                    />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoviFaca_Empresa.Vista.Menu.MenuEmpresaFlyout"
+             Title="Flyout"
+             BackgroundColor="#306970">
+    <StackLayout>
+        <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+            <ListView.Header>
+                <Grid BackgroundColor="#ffffff">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="1" Margin="0,50,0,0">
+                        <Image
+                 Source="logoHorizontal"
+                 HeightRequest="120"
+                 WidthRequest="0"/>
+                    </StackLayout>
+                </Grid>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand" BackgroundColor="#306970">
+                            <!-- <Label VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center" 
+                    Text="{Binding Title}" 
+                    FontSize="24"/>-->
+                            <Grid  Padding="5,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image 
+                                   Source="{Binding Icono}" 
+                                   HeightRequest="15" 
+                                   WidthRequest="15" VerticalOptions="Center" 
+                                   HorizontalOptions="Center"/>
+                                <Label Text="{Binding Title}"
+                                   Grid.Column="1"
+                                   TextColor="White" 
+                                   FontSize="15" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="Start" VerticalOptions="Center"/>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
